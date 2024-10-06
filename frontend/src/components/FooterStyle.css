@@ -1,50 +1,47 @@
-/* FooterStyle.css */
-
 .footer {
-    background-color: #003366; /* Dark blue background */
-    color: #ffffff; /* White text */
-    padding: 1rem 2rem; /* Padding around the footer */
-    position: fixed; /* Fixed positioning */
-    bottom: 0; /* Stick to the bottom */
-    left: 0; /* Align to the left */
-    right: 0; /* Align to the right */
-    width: 100%; /* Full width for the footer */
-    text-align: center; /* Center everything horizontally */
-    z-index: 1000; /* Ensure it stays above other content */
+    background-color: #003366; 
+    color: #ffffff; 
+    padding: 1rem 2rem; 
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    width: 100%; 
+    text-align: center;
+    z-index: 1000;
 }
 
-/* General page content style */
 .main-content {
-    padding-bottom: 100px; /* Add padding equal to or greater than footer height */
+    padding-bottom: 100px; 
 }
  
 .footer-container {
-    display: flex; /* Flexbox for layout */
-    flex-direction: column; /* Stack items vertically */
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items horizontally */
-    max-width: 1200px; /* Max width for the content */
-    margin: 0 auto; /* Center the container */
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    max-width: 1200px; 
+    margin: 0 auto; 
 }
 
 .footer-links {
-    display: flex; /* Flexbox for horizontal layout */
-    justify-content: center; /* Center the links */
-    margin-bottom: 0.5rem; /* Space between links and text */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem;
 }
 
 .footer-link {
-    color: #ffffff; /* White text color */
-    text-decoration: none; /* Remove underline from links */
-    margin: 0 1rem; /* Space between links */
-    transition: color 0.3s ease; /* Smooth transition for hover effect */
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: color 0.3s ease;
 }
 
 .footer-link:hover {
-    color: #00ddff; /* Change color on hover */
+    color: #00ddff; 
 }
 
 .footer-text {
-    margin: 0; /* Remove default margin */
-    text-align: center; /* Center align text */
+    margin: 0; 
+    text-align: center; 
 }

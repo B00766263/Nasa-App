@@ -25,7 +25,8 @@ ChartJS.register(
 );
 
 export default function NasaChart() {
-  const [chartData, setChartData] = useState(null); // Set initial state as null for loading handling
+  // Set initial state as null for loading handling
+  const [chartData, setChartData] = useState(null); 
 
   useEffect(() => {
     const fetchAsteroidData = async () => {
@@ -35,13 +36,14 @@ export default function NasaChart() {
         );
         const neoData = response.data.near_earth_objects;
 
-        // Process the data for chart (e.g., get asteroid count per day)
-        let labels = Object.keys(neoData); // dates
+        // Process the data for chart 
+        let labels = Object.keys(neoData); 
 
-        // Sort the labels (dates) in chronological order
+        // Sort the dates in chronological order
         labels = labels.sort((a, b) => new Date(a) - new Date(b));
 
-        const asteroidCount = labels.map(date => neoData[date].length); // count of objects per date
+        // Count of objects per date
+        const asteroidCount = labels.map(date => neoData[date].length); 
 
         setChartData({
           labels: labels,
@@ -61,7 +63,6 @@ export default function NasaChart() {
     fetchAsteroidData();
   }, []);
 
-  // Loading state while data is being fetched
   if (!chartData) {
     return <div>Loading...</div>;
   }

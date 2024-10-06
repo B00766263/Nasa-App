@@ -1,4 +1,3 @@
-// components/Navbar.js
 import React from "react";
 import { Link } from "react-router-dom";
 import './NavBarStyle.css';
@@ -20,7 +19,7 @@ export default function Navbar() {
                 <Link to="/barchart" className="nav-link">Asteroids NeoWs Chart</Link>
             </li>
             <li className="nav-item">
-                <Link to="/fetchimage" className="nav-link">Special Day</Link>
+                <Link to="/fetchimage" className="nav-link">Special</Link>
             </li>
             </ul>
         </div>
