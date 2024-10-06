@@ -17,13 +17,13 @@ export default function NasaVideo() {
         const videoItems = response.data.collection.items;
 
         if (videoItems.length > 0) {
-          // Get the first video item and its metadata URL (collection.json)
+          // Get the first video item and its metadata URL 
           const collectionUrl = videoItems[0].href;
 
-          // Fetch the collection.json to get video file links
+          // Fetch video file links
           const metadataResponse = await axios.get(collectionUrl);
 
-          // Find the actual video file URL (usually .mp4)
+          // Find the actual video file URL
           const videoFileUrl = metadataResponse.data.find((link) =>
             link.endsWith(".mp4")
           );

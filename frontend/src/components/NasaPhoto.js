@@ -11,9 +11,9 @@ export default function NasaPhoto() {
   useEffect(() => {
     async function fetchPhoto() {
       try {
-        const response = await fetch('/api/apod'); // Proxy will direct this to http://localhost:5000/api/apod
+        const response = await fetch('/api/apod'); 
         const data = await response.json();
-        setPhotoData(data); // Save the data to the state
+        setPhotoData(data); 
         setLoading(false);
       } catch (err) {
         console.error('Failed to fetch APOD data:', err);
@@ -21,9 +21,8 @@ export default function NasaPhoto() {
         setLoading(false);
       }
     }
-
     fetchPhoto();
-  }, []); // Empty dependency array ensures this runs only once when the component mounts
+  }, []);
 
   if (loading) return <p>Loading...</p>;
   if (error) return <h1>{error}</h1>;

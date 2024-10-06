@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import './FetchImage.css'
 
-const apiKey = 'YS05qT691Pq3p27yKqs6LgAaXGT9Ma7pAypD4ujJ'; // Replace with your actual API key
+const apiKey = 'YS05qT691Pq3p27yKqs6LgAaXGT9Ma7pAypD4ujJ';
 
 
 export default function FetchImage() {
@@ -12,7 +12,7 @@ export default function FetchImage() {
 
   const getImage = async (value) => {
     if (!date) {
-      alert("Please enter a date.");
+      alert("Please enter any date!");
       return;
     }
 
@@ -23,7 +23,7 @@ export default function FetchImage() {
       setImageUrl(newImageUrl);
       setError("");
     } catch (err) {
-      setError("Error fetching the image. Please check the date format (YYYY-MM-DD).");
+      setError("Error retrieving the image. Make sure date format correct (YYYY-MM-DD).");
     }
   };
 
