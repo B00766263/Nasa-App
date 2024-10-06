@@ -1,8 +1,7 @@
 const express = require('express');
 const PORT = process.env.PORT || 3001;
 const NASA_API_KEY = 'YS05qT691Pq3p27yKqs6LgAaXGT9Ma7pAypD4ujJ';
-const axios = require('axios');  // Import axios for HTTP requests
-
+const axios = require('axios');  
 const app = express();
 
 app.listen(PORT, () => {
