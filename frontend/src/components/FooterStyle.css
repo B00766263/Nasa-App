@@ -1,0 +1,50 @@
+/* FooterStyle.css */
+
+.footer {
+    background-color: #003366; /* Dark blue background */
+    color: #ffffff; /* White text */
+    padding: 1rem 2rem; /* Padding around the footer */
+    position: fixed; /* Fixed positioning */
+    bottom: 0; /* Stick to the bottom */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    width: 100%; /* Full width for the footer */
+    text-align: center; /* Center everything horizontally */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+/* General page content style */
+.main-content {
+    padding-bottom: 100px; /* Add padding equal to or greater than footer height */
+}
+ 
+.footer-container {
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items horizontally */
+    max-width: 1200px; /* Max width for the content */
+    margin: 0 auto; /* Center the container */
+}
+
+.footer-links {
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: center; /* Center the links */
+    margin-bottom: 0.5rem; /* Space between links and text */
+}
+
+.footer-link {
+    color: #ffffff; /* White text color */
+    text-decoration: none; /* Remove underline from links */
+    margin: 0 1rem; /* Space between links */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.footer-link:hover {
+    color: #00ddff; /* Change color on hover */
+}
+
+.footer-text {
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center align text */
+}

@@ -1,0 +1,53 @@
+/* NasaPhotoStyle.css */
+
+.photo-container {
+    display: flex; /* Flexbox for side-by-side layout */
+    align-items: center; /* Align items vertically in the center */
+    justify-content: flex-start; /* Start the content from the left */
+    padding: 2rem;
+    max-width: 1550px; /* Max width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+.photo-title {
+    font-size: 2rem; /* Large title font */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 1.5rem; /* Space below the title */
+    text-align: center; /* Center align the title */
+    color: #ffffff; /* Optional: Dark blue color for the title */
+}
+
+.photo-image {
+    max-width: 50%; /* Limit the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}
+
+.photo-text {
+    max-width: 55%; /* Limit the width of the text area */
+    margin-left: 2rem; /* Add space between the image and text */
+    color: rgb(237, 234, 234); /* Text color */
+    font-size: 1.1rem; /* Slightly larger font size */
+    line-height: 1.5; /* Improve readability */
+}
+
+.photo-text p {
+    margin-bottom: 1rem; /* Space between paragraphs */
+}
+
+@media (max-width: 768px) {
+    .photo-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        text-align: center; /* Center the content */
+    }
+
+    .photo-image {
+        max-width: 100%; /* Full width on smaller screens */
+        margin-bottom: 1.5rem; /* Space between image and text */
+    }
+
+    .photo-text {
+        margin-left: 0; /* Remove left margin for smaller screens */
+    }
+}

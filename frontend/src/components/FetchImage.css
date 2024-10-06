@@ -1,0 +1,53 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .details {
+    display: flex;
+    justify-content: center; /* Center elements horizontally */
+    align-items: center; /* Align elements vertically */
+    margin-bottom: 20px; /* Add some spacing below */
+  }
+  
+  span {
+    font-size: 1.5rem;
+    padding-right: 1rem;
+  }
+
+  .details-input {
+    text-align: center; /* Space between input and button */
+
+  }
+  
+  .details-input input {
+    font-size: 1.5rem; /* Increase the font size */
+    padding: 10px; /* Add padding for better touch targets */
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1.5rem; /* Increase button text size */
+    color:rgb(46, 36, 36);
+    cursor: pointer;
+    background-color: rgb(209, 204, 204);
+    margin-bottom: 1rem;
+  }
+
+  button:hover {
+    background-color: rgba(55, 192, 250, 0.363); /* Change background color to blue on hover */
+    color: white; /* Change text color to white for contrast */
+  }
+  
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+  
+  .error {
+    color: rgb(252, 245, 245);
+  }
+  
